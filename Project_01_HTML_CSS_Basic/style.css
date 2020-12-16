@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+/*Formatações Gerais*/
+body {
+  font-family: 'Handlee', cursive;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Formatações Cabeçalho */
+.cabecalho {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(66, 18, 45);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100px;
+}
+
+.titulo {
+  color: rgb(255, 255, 255);
+  line-height: 20%;
+  font-size: 150%;
+  margin: 2%;
+}
+
+.menu-navegacao {
+  display: block;
+  margin: 2%;
+}
+
+.menu-navegacao ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.menu-navegacao li {
+  display: inline-block;
+  background-color: rgb(66, 18, 45);
+  padding: 10px;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.menu-navegacao li:hover {
+  background-color: rgb(114, 112, 112);
+}
+
+.menu-navegacao a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}	
+
+.menu-navegacao a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+/* Formatações Perfil */
+.perfil-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.div-perfil-foto {
+  padding: .5%;
+  padding-top: 3%;
+  width: 40%;
+}
+
+.div-perfil-texto {
+  color: rgb(114, 112, 112);
+  font-size: 150%;
+  font-weight: 400;
+  padding: .5%;
+  text-align: left;
+}
+
+.div-perfil-ficha {
+  background-color: rgb(66, 18, 45);
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  font-weight: 900;
+  padding: .5%; 
+  padding-top: 5%;
+  text-align: left;
+  width: 50%;
+}
+
+/* Formatações Obra-Texto */
+.obras-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.div-obras-texto {
+  color: rgb(114, 112, 112);
+  font-size: 150%;
+  font-weight: 400;
+  padding: 1.5%;
+  text-align: left;
+}
+
+.div-obras-principais {
+  background-color: rgb(66, 18, 45);
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  font-weight: 900;
+  padding: .5%; 
+  padding-top: 5%;
+  text-align: left;
+  width: 80%;
+}
+
+/* Formatações Obra-Imagens*/
+.foto-obra {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+
+/* Formatações Referência */
+.referencias-section {
+  color: rgb(114, 112, 112);
+  font-size: 25px;
+  padding-left: 2%;
+}
+
+.referencias-section li:hover {
+  background-color: rgb(114, 112, 112);
+}
+
+.referencias-section a {
+  color: rgb(66, 18, 45);
+  text-decoration: none;
+}
+
+.referencias-section a:hover {
+  color: rgb(114, 112, 112);
+  text-decoration: underline;
+}
+
+/* Formatações Rodapé */
+.rodape {
+    background-color: rgb(66, 18, 45);
+    color: rgb(255, 255, 255);
+    font-size:150%;
+    padding: .5%;
+    text-align: center;
+}

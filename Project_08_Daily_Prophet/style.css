@@ -1,0 +1,114 @@
+@charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+
+/* geral */
+body {
+  background-color: rgb(186, 184, 170);
+  font: 100% 'Jim Nightshade', cursive;
+}
+
+/* header */
+.header-main img {
+  width: 100%;
+}
+
+.header-sub {
+  align-content: center;
+  align-items: center;
+  border-top: 15px double black;
+  border-bottom: 15px double black;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/* exlusive */
+.exclusive-black {
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.exclusive-black p {
+  font-size: calc(.75rem + 1vw);
+  margin: 0px;
+}
+
+.exclusive-black span {
+  font-size: calc(1.5rem + 1vw);
+}
+
+/* animation */
+@keyframes anime-text {
+  0% {
+    color: black;
+  }
+
+  25% {
+    color: orangered;
+  }
+
+  50% {
+    color: white;
+  }
+
+  75% {
+    color: orange;
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+/* text */
+.exclusive-title {
+  align-content: center;
+  align-items: center;
+  animation: anime-text 1.5s linear infinite;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: calc(.75rem + 1vw);
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.exclusive-description {
+  margin: auto;
+  width: 90%;
+}
+
+.exclusive-description p {
+  font-size: calc(.75rem + 1vw);
+  text-indent: 50px;
+}
+
+.exclusive-description a {
+  animation: anime-text 1.5s linear infinite;
+	color: white;
+	text-decoration: none;
+}
+
+@media screen and ( min-width : 800px ) {
+  .header-sub {
+    align-items: stretch;
+    flex-flow: row nowrap;
+  }
+
+  .exclusive-black {
+    flex-flow: column wrap;
+    width: 20%;
+  }
+  .exclusive-description p {
+    column-count: 2;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <img src="./img/mercado_livre.png" alt="logo mercado livre">
+    </header>
+
+    <section class="container">
+
+      <section class="items">
+        <div class="loading">
+          <p>Loading...</p>
+          <img src="./img/loading.png" alt="loading">
+        </div>
+      </section>
+
+      <section class="cart">
+
+        <div class="cart-title">
+          <img src="./img/cart.png" alt="cart">
+          <h2>Carrinho de compras</h2>
+          <button class="empty-cart">
+            <img src="./img/cart-del.png" alt="cart-del">
+          </button>
+        </div>
+
+        <ol class="cart__items"></ol>
+
+        <h3 class="cart__title">
+          Total: R$<span class="total-price"></span>
+        </h3>
+
+      </section>
+    </section>
+
+    <footer>
+      <p>&copy; Ana Higo - Trybe Student </p>
+      <a href="https://github.com/anahigo" target="_blank"><img src="./img/git.png" class="logo" width=3%></a>
+      <a href="https://br.linkedin.com/in/ana-higo-0182021a3" target="_blank"><img src="./img/linkedin.png" class="logo" width=3%></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+@charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet');
+
+/* general */
+body {
+  background-color: rgb(61, 26, 26);
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* header */
+header {
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+}
+
+/* section - button */
+.section_buttons {
+  margin: auto;
+  padding: 15px;
+  width: 650px;
+}
+
+.excluir, 
+.mover-cima, 
+.mover-baixo, 
+.remover-finalizados, 
+.apaga-tudo, 
+.salvar-tarefas  {
+    border: 0px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18pt;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.excluir {
+  background-color: red;
+}
+
+.mover-cima {
+  background-color: orange;
+}
+
+.mover-baixo {
+  background-color: orange;
+}
+
+.remover-finalizados {
+  background-color: grey;
+}
+
+.apaga-tudo {
+  background-color: red;
+}
+
+.salvar-tarefas {
+  background-color: green;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* section - list */
+.section_list {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+  margin: auto;
+  padding: 15px;
+  width: 1000px;
+}
+
+.texto-tarefa {
+  font-size: 20pt;
+  width: 900px;
+}
+
+.criar-tarefa {
+  background-color: black;
+  border: 0px;
+  border-radius: 15px;
+  color: white;
+  font-size: 18pt;
+  font-weight: bolder;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.lista-tarefas {
+  font-size: 20pt;
+  font-weight: bold;
+  width: 900px;
+  margin:10px;
+}
+
+li {
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  color: white;
+  font-size: 20pt;
+  font-style: italic;
+  text-align: center;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header --> 
+  <header>
+    <h1>My To-Do List</h1>
+  </header>
+
+  <!-- section buttons -->
+  <section id="section_buttons" class="section_buttons">
+    <div id="div_buttons" class="div_buttons">
+      <button id="excluir" class="excluir">X</button>
+      <button id="mover-cima" class="mover-cima">&#9650;</button>
+      <button id="mover-baixo" class="mover-baixo">&#9660;</button>
+      <button id="remover-finalizados" class="remover-finalizados">Clear Finished</button>
+      <button id="apaga-tudo" class="apaga-tudo">Delete List</button>
+      <button id="salvar-tarefas" class="salvar-tarefas">Save</button>
+      </div>
+  </section>
+
+  <!-- section list -->  
+  <section id="section_list" class="section_list">
+    <div>
+      <form style="display: inline;">
+        <label for="texto-tarefa" class="texto-tarefa"></label>
+        <input type="text" id="texto-tarefa" class="texto-tarefa" placeholder="Type a task...">
+      </form>
+      <button id="criar-tarefa" class="criar-tarefa">Add</button>
+    </div>
+    <div>
+      <ol id="lista-tarefas" class="lista-tarefas"></ol>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; Ana Higo - Trybe Student </p>
+    <a href="https://github.com/anahigo" target="_blank"><img src="./img/git.png" class="logo" width=3%></a>
+    <a href="https://br.linkedin.com/in/ana-higo-0182021a3" target="_blank"><img src="./img/linkedin.png" class="logo" width=3%></a>
+  </footer>
+
+  <!-- js -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

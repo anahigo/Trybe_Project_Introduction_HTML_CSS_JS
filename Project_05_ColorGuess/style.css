@@ -1,0 +1,56 @@
+@charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"');
+
+/* general */
+body {
+  background-color: rgb(61, 26, 26);
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* header */
+header {
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+} 
+
+/* section - list */
+section {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+  color: rgb(61, 26, 26);
+  font-size: 17pt;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  width: 1000px;
+}
+
+.ball {
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  margin: 20px;
+  width: 100px;
+}
+
+.restart-game {
+  background-color: rgb(61, 26, 26);
+  border: 0px;
+  border-radius: 15px;
+  color: white;
+  font-size: 18pt;
+  font-weight: bolder;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+
+/* footer */
+footer {
+  color: white;
+  font-size: 20pt;
+  font-style: italic;
+  text-align: center;
+}

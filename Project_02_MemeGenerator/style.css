@@ -1,0 +1,129 @@
+@charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* general */
+body {
+  background-color: rgb(83, 86, 90);
+  font-family: 'Special Elite', cursive;
+}
+
+/* header */
+header {
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+}
+
+/* section - image */
+section {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15pt;
+  justify-content: space-between;
+  margin: auto;
+  padding: 15px;
+}
+
+.image-container {
+  border: 4px groove black;
+  padding: 10px;
+  width: 20%;
+}
+
+input[type='file'] {
+  display: none
+}
+
+.form-image label {
+  background-color: cadetblue;
+  border: none;
+  font-family: 'Special Elite', cursive;
+  font-size: 15pt;
+  margin: 5px;
+  padding: 5px 20px;
+}
+
+.form-image label:hover {
+  background-color: gray;
+}
+
+.choose-img {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  width: 2%;
+}
+
+/* section - main */
+.text-input {
+  font-size: 15pt;
+  width: 800px;
+}
+
+.meme-image-container {
+  background-color: rgba(255, 255, 255, 1);
+  margin: 15px 0px;
+}
+
+.meme-image {
+  width: 800px;
+  border: 1px solid black;
+}
+
+.meme-text {
+  color: gray;
+  font-size: 25pt;
+  font-weight: 900;
+  margin-left: 50px;
+  margin-top: -150px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  word-wrap: break-word;
+  max-width: 700px;
+}
+
+.button-reset {
+  margin-left: 35%;
+}
+
+/* section - style */
+.style-container {
+  border: 4px groove black;
+  padding: 10px;
+  width: 20%;
+}
+
+.choose-style {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin: auto;
+}
+
+.button {
+  background-color: cadetblue;
+  border: none;
+  font-family: 'Special Elite', cursive;
+  font-size: 15pt;
+  margin: 5px;
+  padding: 5px 0px;
+  width: 200px;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+/* footer */
+footer {
+  color: white;
+  font-size: 20pt;
+  font-style: italic;
+  text-align: center;
+}

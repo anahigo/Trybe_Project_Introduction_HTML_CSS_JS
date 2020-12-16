@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <h1>Pixel Drawing</h1>
+  </header>
+
+  <!-- section style -->
+  <section class="style" id="style">
+    <div>
+      <div id="color-palette" class="color-palette">
+        <p>Select color:</p>
+        <div class="color selected" class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+      </div>
+
+      <div class="size" id="size">    
+        <form>
+          <label for="board-size" class="board-size">Select board size:</label>
+          <span class="min-max">min: 05 | max: 50</span>
+          <input type="number" id="board-size" min="5" max="50">
+        </form>
+      </div>
+
+      <div class="button" id="button">
+        <button id="generate-button" class="generate-button">Change</button>
+        <button id="clear-button" class="clear-button">Clear</button>
+    </div>
+  </section>
+
+  <!-- section board -->
+  <section class="board" id="board">
+    <div>
+      <h2>Paint the squares:</h2>
+    </div>
+    <div id="pixel-board" class="pixel-board">
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; Ana Higo - Trybe Student </p>
+    <a href="https://github.com/anahigo" target="_blank"><img src="./img/git.png" class="logo" width=3%></a>
+    <a href="https://br.linkedin.com/in/ana-higo-0182021a3" target="_blank"><img src="./img/linkedin.png" class="logo" width=3%></a>
+  </footer>
+
+  <script>
+    const generateBoard = document.getElementById("generate-button")
+generateBoard.addEventListener('click', () => {
+      const pixels = document.querySelectorAll('.pixel');
+      const pixelBoard = document.getElementById('pixel-board');
+      let size = document.getElementById('board-size').value;
+
+      for (let i = 0; i < pixels.length; i++) {
+        pixelBoard.removeChild(pixels[i]);
+      }
+
+      if (size < 5)
+        size = 5;
+      if (size > 50)
+        size = 50;
+
+      pixelBoard.style.height = size * 42 + 'px';
+      pixelBoard.style.width = size * 42 + 'px';
+
+      for (let i = 0; i < size * size; i++) {
+        const newPixel = document.createElement('div');
+        newPixel.classList.add('pixel');
+        pixelBoard.appendChild(newPixel);
+      }
+    })
+  </script>
+
+</body>
+
+</html>

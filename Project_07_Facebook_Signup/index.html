@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Singnup </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- cabeçalho -->
+    <header>
+      <div class="header">
+
+        <div class="top-bar">
+
+          <div class="logo">
+            <a href=index.html><img src="./img/facebook-logo.png" alt="logotipo do facebook" width=200px class="facebook-logo"></a>
+          </div>
+
+          <div class="login">
+            <form name="form-login" id="form-login" class="form-login">
+              <div class="finput-login">
+                <label for="fEmailPhone" id="user-email-phone-label">Email ou telefone</label><br>
+                <input type="text" name="fEmailPhone" id="user-email-phone" required><br>
+                <span class="span-hidden">span</span>
+              </div>
+
+              <div class="finput-login">
+                <label for="fPassoword">Senha</label><br>
+                <input type="password" name="fPassoword" id="user-password" required><br>
+                <span><a href="" target="_black">Esqueceu a conta?</a></span>
+              </div>
+
+              <div class="button">
+                <button id="button-login" class="button-login" type="submit">Entrar</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- section  -->
+    <section class="content">
+      <div class="content-container">
+
+        <div class="left-content">
+
+          <p>
+            O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+          </p>
+
+          <img src="./img/networking.png" alt="mapa-mundi com figuras que representam pessoas e essas pessoas estão conectadas" id="facebook-networking">
+
+        </div>
+            
+        <div class="right-content">
+
+          <div class="text-signup">
+            <h1 class="title-signup">Abra uma conta</h1>
+            <p class="paragraph-signup">É rápido e fácil.</p>
+          </div>
+
+          <div class="signup">
+            <form name="form-signup">
+              <div class="finput-name">
+                <div class="finput-signup">
+                  <input type="text" id="fName" placeholder="Nome" required>
+                </div>
+
+                <div class="finput-signup">
+                  <input type="text" id="fLastName" placeholder="Sobrenome" required>
+                </div>
+              </div>
+
+              <div class="finput-signup">
+                <input type="text" id="fEmailPhoneSignup" placeholder="Celular ou email" required>
+              </div>
+
+              <div class="finput-signup">
+                <input type="password" name="fPassowordSignup" placeholder="Nova senha" required>
+              </div>
+            
+              <div class="finput-born">
+                <div class="text-01">
+                  <p>Data de nascimento</p>
+                </div>
+
+                <div class="date-born">
+                  <select name="fBornDay" id="fBornDay" class="fBornDate">
+                  </select>
+                  <select name="fBornMonth" id="fBornMonth" class="fBornDate">
+                  </select>
+                  <select name="fBornYear" id="fBornYear" class="fBornDate">
+                  </select>
+                  <div class="dropdown">
+                    <img src="./img/interrogação.png" alt="Dúvidas?" class="interrogação" width="15px">
+                    <span class="dropdown-content">
+                      <p>Ao <strong>sua data de nascimento</strong>, você ajuda a garantir que a sua experiência no Facebook seja adequada à sua idade. Se desejar alterar quem vê isso, vá para a seção Sobre do seu perfil. Para obter mais detalhes, visite nossa <a href="" target="_black">Política de Dados</a>.</p>
+                      <hr class="line-01">
+                      <button type="button" class="button-closed">Fechar</button>
+                    </span>
+                  </div>
+              </div>
+
+              <div class="finput-genre">
+                <div class="text-01">
+                  <p>Gênero</p>
+                </div>
+
+                <div>
+                  <input type="radio" name="Feminino" id="Feminino" value="Feminino" required>
+                  <label for="Feminino">Feminino</label>
+
+                  <input type="radio" name="Masculino" id="masculino" value="Masculino">
+                  <label for="Masculino">Masculino</label>
+
+                  <input type="radio" name="Personalizado" id="Personalizado" value="Personalizado">
+                  <label for="Personalizado">Personalizado</label>
+                </div>
+                
+                <div  class="dropdown">
+                  <img src="./img/interrogação.png" alt="Dúvidas?" class="interrogação" width="2px">
+                  <span class="dropdown-content">
+                    <p>Você poderá alterar quem vê o gênero no seu perfil posteriormente. Selecione Personalizado se você deseja escolher outro gênero ou prefere não informá-lo.</p>
+                    <hr class="line-01">
+                    <button type="button" class="button-closed">Fechar</button>
+                  </span>
+                </div>
+              </div>
+
+              <div class="text-02">
+                <p>Ao clicar em Cadastre-se, você concorda com nossos <a href="" target="_black">Termos, Política de Dados</a> e <a href="" target="_black">Política de Cookies</a>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+              </div>
+
+              <div class="finput-signup">
+                <button id="facebook-register" type="register" class="button-register">Cadastre-se</button>
+              </div>
+
+              <div class="text-03">
+                <p class="text-03"><a href="" target="_black">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>       
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-1">
+        <p>Português (Brasil)</p>
+        <p><a href="" target="_black">English (US)</a></p>   
+        <p><a href="" target="_black">Español</a></p> 
+        <p><a href="" target="_black">Français (France)</a></p> 
+        <p><a href="" target="_black">Italiano</a></p> 
+        <p><a href="" target="_black">العربية</a></p> 
+        <p><a href="" target="_black">Deutsch</a></p> 
+        <p><a href="" target="_black">हिन्दी</a></p> 
+        <p><a href="" target="_black">中文(简体)</a></p>
+        <p><a href="" target="_black">日本語</a></p>
+        <a href="" target="_black"><img src="./img/mais.png" alt="mais" class="mais" height="10px"></a>
+      </div>
+      <hr class="line-02">
+      <div>
+        <div class="footer-2">
+          <a href="" target="_black">Cadastre-se</a> 
+          <a href="" target="_black">Entrar</a> 
+          <a href="" target="_black">Messenger</a> 
+          <a href="" target="_black">Facebook Lite</a> 
+          <a href="" target="_black">Watch</a> 
+          <a href="" target="_black">Pessoas</a> 
+          <a href="" target="_black">Categorias de Página</a> 
+          <a href="" target="_black">Locais</a> 
+          <a href="" target="_black">Jogos</a>
+          <a href="" target="_black">Locais</a>
+          <a href="" target="_black">Marketplace</a>
+          <a href="" target="_black">Facebook Pay</a>
+          <a href="" target="_black">Oculus</a>
+          <a href="" target="_black">Portal</a>
+          <a href="" target="_black">Instagram</a>
+          <a href="" target="_black">Campanhas de arrecadação de fundos</a>
+          <a href="" target="_black">Serviços</a>
+          <a href="" target="_black">Criar anúncio</a>
+          <a href="" target="_black">Criar Página</a>
+          <a href="" target="_black">Desenvolvedores</a>
+          <a href="" target="_black">Carreiras</a>
+          <a href="" target="_black">Privacidade</a>
+          <a href="" target="_black">Cookies</a>
+          <a href="" target="_black">Opções de anúncio</a>
+          <a href="" target="_black">Termos</a>
+          <a href="" target="_black">Ajuda</a>
+          <a href="" target="_black">Configurações</a>
+          <a href="" target="_black">Registro de Atividades</a>
+        </div>
+      </div> 
+
+      <div class="footer-face">
+        <p>Facebook © 2020  </p>
+      </div> 
+
+      <div class="footer-ana">
+        <p>&copy; Ana Higo - Trybe Student</p>
+      </div>      
+
+    </footer>
+
+    <!-- js -->
+    <script src="script.js"></script>
+
+  </body>
+  
+</html>

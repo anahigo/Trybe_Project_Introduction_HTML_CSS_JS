@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+.section-sub {
+  align-content: center;
+  align-items: center;
+  border-top: 5px double black;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+/* article - 01  hogwarts*/
+.section-sub-01 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.section-sub-title-01 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.section-sub-title-01 h2 {
+  font-size: calc(1.25rem + 1vw);
+}
+
+.section-sub-title-01 span {
+  font-size: calc(2rem + 1vw);
+}
+
+.section-sub-text-01 {
+  margin: auto;
+  width: 90%;
+}
+
+.letter-p {
+  display: inline;
+  margin-bottom: -80px;
+  margin-left: -30px;
+  width: calc(5rem + 1vw);
+}
+
+.section-sub-text-01 p {
+  font-size: calc(.5rem + 1vw);
+  text-indent: 50px;
+}
+
+@keyframes shaking {
+  0% {
+    transform: rotate(5deg)
+  }
+
+  50% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(-5deg)
+  }
+}
+
+.hogwarts {
+  align-content: center;
+  align-items: center;
+  animation: shaking .3s linear infinite;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: auto;
+  margin: auto;
+  width: 50%;
+}
+
+/* article - 02 e 03 */
+.section-sub-02-03 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+
+/* article - 02 */
+.section-sub-02 {
+  align-content: center;
+  align-items: center;
+  border-top: 5px double black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.section-sub-title-02 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.section-sub-title-02 h2 {
+  font-size: calc(1.25rem + 1vw);
+}
+
+.section-sub-title-02 span {
+  font-size: calc(1rem + 1vw);
+}
+
+.section-sub-text-02 {
+  margin: auto;
+  width: 90%;
+}
+
+.letter-l {
+  display: inline;
+  margin-bottom: -120px;
+  margin-left: -30px;
+  width: calc(5rem + 1vw);
+}
+
+.section-sub-text-02 p {
+  font-size: calc(.5rem + 1vw);
+  text-indent: 50px;
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(0px, -100px)
+  }
+
+  100% {
+    transform: translate(0px, 0px)
+  }
+}
+
+.witchcraft {
+  animation: moving 1s linear infinite;
+  visibility: hidden;
+  width: 0%;
+}
+
+/* article - 03 */
+.section-sub-03 {
+  align-content: center;
+  align-items: center;
+  border-top: 5px double black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.section-sub-title-03 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+}
+
+.section-sub-title-03 h2 {
+  font-size: calc(1.25rem + 1vw);
+  width: 100%;
+}
+
+.section-sub-text-02 {
+  margin: auto;
+  width: 90%;
+}
+
+.letter-c {
+  display: inline;
+  margin-bottom: -70px;
+  margin-left: -30px;
+  width: calc(5rem + 1vw);
+}
+
+.section-sub-text-03 p {
+  font-size: calc(.5rem + 1vw);
+  text-indent: 50px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  25% {
+    transform: rotate(90deg)
+  }
+
+  50% {
+    transform: rotate(180deg)
+  }
+
+  75% {
+    transform: rotate(270deg)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.quidditch {
+  animation: rotate .4s linear infinite;
+  width: 0%;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  .section-sub-text-02-text {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .witchcraft {
+    visibility: visible;
+    width: 15%;
+  }
+
+  .section-sub-title-03 {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+  }
+
+  .quidditch {
+    width: 50%;
+    visibility: visible;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .section-sub {
+    flex-flow: row nowrap;
+  }
+
+  .section-sub-01 {
+    flex-flow: row-reverse nowrap;
+    width: 40%;
+  }
+
+  .section-sub-title-01 {
+    writing-mode: vertical-rl;
+    width: 10%;
+  }
+
+  .section-sub-text-01 {
+    width: 80%;
+  }
+
+  .hogwarts {
+    width: 100%;
+  }
+
+  .section-sub-02 {
+    border-top: none;
+    width: 95%;
+  }
+
+  .section-sub-03 {
+    width: 95%;
+  }
+  
+  .section-sub-03 {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 90%;
+  }
+
+  .section-sub-title-03 {
+    flex-flow: column nowrap;
+    width: 90%;
+  }
+
+  .section-sub-text-03 {
+    margin-left: 30px;
+  }
+
+  .quidditch {
+    width: 100%;
+  }
+}

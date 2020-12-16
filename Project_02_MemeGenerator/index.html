@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project JS - Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <h1>Meme Generator</h1>
+  </header>
+
+  <!-- section -->
+  <section>
+
+    <!-- section images -->
+    <div class="image-container">
+      <div>
+        <h3>Images</h3>
+        <p>You can <strong>selector</strong> or <strong>choose</strong> the image:</p>
+      </div>
+      <div>
+        <form class="form-image">
+          <label for="meme-insert" class="select-img">Select the image:</label>
+          <input type="file" id="meme-insert" class="meme-insert">
+          <span id="file-name"></span>
+        </form>
+      </div>
+      <p>Choose the image:</p>
+       <div class="choose-img">
+        <img id="meme01" class="image" onclick="openImage('./img/meme01.jpg')" src="./img/meme01.jpg" width=125px>
+        <img id="meme02" class="image" onclick="openImage('./img/meme02.jpg')" src="./img/meme02.jpg" width=125px>
+        <img id="meme03" class="image" onclick="openImage('./img/meme03.jpg')" src="./img/meme03.jpg" width=125px>
+        <img id="meme04" class="image" onclick="openImage('./img/meme04.jpg')" src="./img/meme04.jpg" width=125px>
+        <img id="meme05" class="image" onclick="openImage('./img/meme05.jpg')" src="./img/meme05.jpg" width=125px>
+        <img id="meme06" class="image" onclick="openImage('./img/meme06.jpg')" src="./img/meme06.jpg" width=125px>
+        <img id="meme07" class="image" onclick="openImage('./img/meme07.jpg')" src="./img/meme07.jpg" width=125px>
+        <img id="meme08" class="image" onclick="openImage('./img/meme08.jpg')" src="./img/meme08.jpg" width=125px>
+        <img id="meme09" class="image" onclick="openImage('./img/meme09.jpg')" src="./img/meme09.jpg" width=125px>
+        <img id="meme10" class="image" onclick="openImage('./img/meme10.jpg')" src="./img/meme10.jpg" width=125px>
+      </div>
+    </div>
+
+    <!-- section main -->
+    <div class="main">
+      <div class="img-txt">
+        <form>
+          <label for="text-input" class="text-input-for">Insert the text:</label><br>
+          <input type="text" id="text-input" class="text-input" maxlength="60" autocomplete="off">
+        </form>
+      </div>
+      <div id="meme-image-container" class="meme-image-container">
+        <img id="meme-image" class="meme-image" src="" alt="image" width=650px>
+        <p id="meme-text" class="meme-text"></p>
+      </div>
+    </div>
+
+    <!-- section style -->
+    <div class="style-container">
+      <div>
+        <h3>Style</h3>
+      </div>
+      <div class="choose-style">
+        <p>Border style:</p>
+        <button id="button01" class="button">Solid</button>
+        <button id="button02" class="button">Double</button>
+        <button id="button03" class="button">None</button>
+      </div>
+      <div class="choose-style">
+        <p>Font style:</p>
+        <button id="button04" class="button">Courier New</button>
+        <button id="button05" class="button">Heveltica</button>
+        <button id="button06" class="button">Special Elite</button>
+      </div>
+      <div class="choose-style">
+        <p>Font color:</p>
+        <button id="button07" class="button">White</button>
+        <button id="button08" class="button">Black</button>
+        <button id="button09" class="button">Red</button>
+      </div>
+      <div class="choose-style">
+        <p>Font size:</p>
+        <button id="button10" class="button">25pt</button>
+        <button id="button11" class="button">30pt</button>
+        <button id="button12" class="button">35pt</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; Ana Higo - Trybe Student </p>
+    <a href="https://github.com/anahigo" target="_blank"><img src="./img/git.png" class="logo" width=3%></a>
+    <a href="https://br.linkedin.com/in/ana-higo-0182021a3" target="_blank"><img src="./img/linkedin.png" class="logo" width=3%></a>
+  </footer>
+
+  <!-- js -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
